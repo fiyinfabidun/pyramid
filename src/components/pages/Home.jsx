@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import Slider from '../Slider'
 import img1 from '../../assets/build1.png'
+import img2 from '../../assets/build2.png'
 
 
 
@@ -58,7 +59,7 @@ function Home() {
 
             <div className="card p-3 bg-[#252525] rounded-[24px] flex flex-col gap-4">
               <div className="image ">
-              <img src={img1} alt="" />
+              <img src={img2} alt="" />
               </div>
               <div className="flex justify-between">
                 <div className="flex flex-col">
