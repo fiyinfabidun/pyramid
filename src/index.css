@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.maxed{
+  width: 90%;
+  margin: auto;
+}
+
+@theme{
+  --color-bg:#131313; 
+  --color-text-off-white:#F9F9F9;
+  --color-body-white:#F2F2F2;
+}

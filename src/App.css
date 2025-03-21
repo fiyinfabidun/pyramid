@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.hero-section{
+    background-image: url('./assets/PIXEL.png');
+}
+h2 span{
+   color: #F19A21;
+}
+
+h1,h2,h3,h4{
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: #131313;
+}
+
+/* SLIDER */
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    padding: 130px;
+    border-radius: 20px;
+    border: 2px solid white;
+  
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper-slide {
+    width: 80%;
+  }
+  
+  .swiper-slide:nth-child(n) {
+    width: 70%;
+  }
+  
+  .swiper-slide:nth-child(2n) {
+    width: 30%;
+  }
+  
+  .bg1{
+    background-image: url('./assets/c.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .bg2{
+    background-image: url('./assets/a.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .bg3{
+    background-image: url('./assets/d.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .bg4{
+    background-image: url('./assets/e.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .bg5{
+    background-image: url('./assets/d.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .bg6{
+    background-image: url('./assets/a.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
+
+.swiper-pagination-bullet{
+    background-color: white!important;
+    opacity: 1;
+} 
+.swiper-pagination-bullet-active{
+    background-color: black
+}
