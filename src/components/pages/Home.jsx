@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar'
 import Slider from '../Slider'
 import img1 from '../../assets/build1.png'
-import img2 from '../../assets/build2.png'
+import img2 from '../../assets/buld2.png'
 
 
 
