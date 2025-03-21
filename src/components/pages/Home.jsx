@@ -42,7 +42,7 @@ function Home() {
             Featured work<span>.</span>
                    </h2>
 
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[70%] p-10 gap-4">
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[70%] lg:p-10 p-4 gap-4">
 
             <div className="card p-3 bg-[#252525] rounded-[24px] flex flex-col gap-4">
               <div className="image ">
