@@ -90,7 +90,7 @@ function Home() {
             Featured work<span>.</span>
                    </h2>
 
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[70%] xl:w-[80%] lg:p-10 p-4 gap-4">
+             <div className="grid note grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[70%] xl:w-[80%] lg:p-10 p-4 gap-4">
 
             <div className="card p-3 bg-[#252525] rounded-[24px] flex flex-col gap-4">
               <div className="image ">
@@ -290,6 +290,85 @@ function Home() {
         </div>
       ))}
     </div>
+    </section>
+
+
+    <section className="py-10 w-[90%] m-auto">
+    <button className="rounded-[100px] bg-[#BAE79F] py-[5px] px-[18px] text-black text-xs flex self-start">Hear from people</button>
+    <h2 className="text-start text-[#F2F2F2] font-semibold text-3xl md:text-6xl">Build Your Dream Space<span>.</span></h2>     
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:w-[75%] py-10 m-auto">
+    <div className="test-card bg-[#252525] p-4 flex flex-col gap-4 rounded-xl justify-between">
+  <p className="text-sm lg:text-lg text-gray-400 text-start w-full">
+    Pyramid Architecture Studio transformed our office into a masterpiece. The attention to detail was exceptional!
+  </p>
+
+  <div className="profile flex items-center gap-2">
+    <div className="bg-blue-50 w-[56px] h-[56px] rounded-[50%] p-4"></div>
+    <div className="flex flex-col">
+      <h3 className="text-[#d5d5d5] font-semibold">John Carter</h3>
+      <p className="text-sm text-[#d5d5d5] font-light">Manager, Arcane Tech</p>
+    </div>
+  </div>
+</div>
+
+<div className="test-card justify-between bg-[#252525] p-4 flex flex-col gap-4 rounded-xl">
+  <p className="text-sm lg:text-lg text-gray-400 text-start w-full">
+    Working with Pyramid was a dream. They brought our vision to life seamlessly.
+  </p>
+
+  <div className="profile flex items-center gap-2">
+    <div className="bg-green-50 w-[56px] h-[56px] rounded-[50%] p-4"></div>
+    <div className="flex flex-col">
+      <h3 className="text-[#d5d5d5] font-semibold">Sophia Reynolds</h3>
+      <p className="text-sm text-[#d5d5d5] font-light">CEO, Urban Spaces</p>
+    </div>
+  </div>
+</div>
+
+<div className="test-card justify-between bg-[#252525] p-4 flex flex-col gap-4 rounded-xl">
+  <p className="text-sm lg:text-lg text-gray-400 text-start w-full">
+    Their innovative approach turned our home into something truly unique. Highly recommended!
+  </p>
+
+  <div className="profile flex items-center gap-2">
+    <div className="bg-yellow-50 w-[56px] h-[56px] rounded-[50%] p-4"></div>
+    <div className="flex flex-col">
+      <h3 className="text-[#d5d5d5] font-semibold">Elijah Brooks</h3>
+      <p className="text-sm text-[#d5d5d5] font-light">Homeowner</p>
+    </div>
+  </div>
+</div>
+
+<div className="test-card justify-between bg-[#252525] p-4 flex flex-col gap-4 rounded-xl">
+  <p className="text-sm lg:text-lg text-gray-400 text-start w-full">
+    I was impressed by their creativity and professionalism. Every detail was taken care of.
+  </p>
+
+  <div className="profile flex items-center gap-2">
+    <div className="bg-purple-50 w-[56px] h-[56px] rounded-[50%] p-4"></div>
+    <div className="flex flex-col">
+      <h3 className="text-[#d5d5d5] font-semibold">Ava Mitchell</h3>
+      <p className="text-sm text-[#d5d5d5] font-light">Designer, ArtScape</p>
+    </div>
+  </div>
+</div>
+
+<div className="test-card justify-between bg-[#252525] p-4 flex flex-col gap-4 rounded-xl">
+  <p className="text-sm lg:text-lg text-gray-400 text-start w-full">
+    The team exceeded our expectations. The space they designed is both functional and stylish.
+  </p>
+
+  <div className="profile flex items-center gap-2">
+    <div className="bg-red-50 w-[56px] h-[56px] rounded-[50%] p-4"></div>
+    <div className="flex flex-col">
+      <h3 className="text-[#d5d5d5] font-semibold">Daniel Foster</h3>
+      <p className="text-sm text-[#d5d5d5] font-light">Director, Innovate Labs</p>
+    </div>
+  </div>
+</div>
+
+      </div> 
     </section>
 
     </>
