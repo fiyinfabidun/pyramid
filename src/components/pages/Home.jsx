@@ -167,10 +167,48 @@ function Home() {
       </p>
       </div>
 
-      <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-             <div className="card flex rounded-2xl bg-[#252525]">
-              <div className="image-space">
-              <img src={green} alt="" />
+      <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[70%] mt-8 gap-5">
+             <div className="card flex rounded-2xl bg-[#252525] flex-col">
+              <div className="image-space flex justify-center items-center bg-[#2EF1AD0F] p-10">
+              <img src={green} alt="" className='w-[50%]' />
+              </div>
+              <div className="text-[#d5d5d5] text-center p-6">
+                <h2 className="text-lg">
+                Modern Architecture Patterns
+                </h2>
+                  <p className="text-sm">
+                  Explore modern architecture patterns that blend aesthetics with functionality, creating spaces that are both visually stunning and purpose-driven. We turn bold ideas into reality, delivering structures that stand the test of time.
+                  </p>
+              </div>
+                 
+             </div>
+
+             <div className="card flex rounded-2xl bg-[#252525] flex-col">
+              <div className="image-space flex justify-center items-center bg-[#2EF1AD0F] p-10">
+              <img src={green} alt="" className='w-[50%]' />
+              </div>
+              <div className="text-[#d5d5d5] text-center p-6">
+                <h2 className="text-lg">
+                Modern Architecture Patterns
+                </h2>
+                  <p className="text-sm">
+                  Explore modern architecture patterns that blend aesthetics with functionality, creating spaces that are both visually stunning and purpose-driven. We turn bold ideas into reality, delivering structures that stand the test of time.
+                  </p>
+              </div>
+                 
+             </div>
+
+             <div className="card flex rounded-2xl bg-[#252525] flex-col">
+              <div className="image-space flex justify-center items-center bg-[#2EF1AD0F] p-10">
+              <img src={green} alt="" className='w-[50%]' />
+              </div>
+              <div className="text-[#d5d5d5] text-center p-6">
+                <h2 className="text-lg">
+                Modern Architecture Patterns
+                </h2>
+                  <p className="text-sm">
+                  Explore modern architecture patterns that blend aesthetics with functionality, creating spaces that are both visually stunning and purpose-driven. We turn bold ideas into reality, delivering structures that stand the test of time.
+                  </p>
               </div>
                  
              </div>
