@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import Navbar from '../Navbar'
 import Slider from '../Slider'
@@ -11,10 +12,49 @@ import ver1 from '../../assets/version1.png'
 import ver2 from '../../assets/version0.png'
 
 import green from '../../assets/green.png';
+import vi from '../../assets/vi.png';
+import pale from '../../assets/pale.png';
 
+import { useState } from 'react'
 
+import { FiPlus, FiMinus } from "react-icons/fi";
+import { AnimatePresence,motion } from 'framer-motion'
+
+const faqs = [
+  {
+    question: "What services does your architecture firm offer?",
+    answer: "Our firm offers a comprehensive range of services including architectural design, urban planning, interior design, sustainable architecture consulting, 3D visualization, and project management from concept to completion."
+  },
+  {
+    question: "How do you charge for your architectural services?",
+    answer: "We typically charge based on a percentage of the total construction cost, ranging from 8-15% depending on project complexity. For smaller projects, we may offer hourly rates or fixed-fee packages. We provide detailed fee proposals after our initial consultation."
+  },
+  {
+    question: "What is your design philosophy?",
+    answer: "Our design philosophy centers on creating spaces that harmoniously blend functionality, aesthetics, and sustainability. We believe architecture should respond to both human needs and environmental context, while pushing boundaries of innovation and respecting cultural heritage."
+  },
+  {
+    question: "How long does the typical architectural design process take?",
+    answer: "The design process timeline varies by project scope. Residential projects typically take 3-6 months for design development, while commercial projects may require 6-12 months. Construction documentation and permitting add additional time. During our initial consultation, we'll provide a customized timeline for your specific project."
+  },
+  {
+    question: "Do you specialize in any particular architectural style?",
+    answer: "While we're versatile in various architectural styles, our portfolio showcases strength in contemporary sustainable design, adaptive reuse of historic structures, and biophilic architecture. We prioritize tailoring our approach to each client's vision rather than imposing a signature style."
+  },
+  {
+    question: "What sustainability practices do you incorporate into your designs?",
+    answer: "We integrate numerous sustainable practices including passive solar design, energy-efficient systems, water conservation strategies, locally-sourced and eco-friendly materials, green roofs, and smart home technology. Our firm includes LEED-certified professionals who can guide projects toward various sustainability certifications."
+  }
+];
 
 function Home() {
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <>
     <section className="hero-section bg-bg h-screen flex flex-col justify-center items-center ">
@@ -167,7 +207,7 @@ function Home() {
       </p>
       </div>
 
-      <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-[70%] mt-8 gap-5">
+      <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[80%] mt-8 gap-3 w-[90%] m-auto">
              <div className="card flex rounded-2xl bg-[#252525] flex-col">
               <div className="image-space flex justify-center items-center bg-[#2EF1AD0F] p-10">
               <img src={green} alt="" className='w-[50%]' />
@@ -184,35 +224,72 @@ function Home() {
              </div>
 
              <div className="card flex rounded-2xl bg-[#252525] flex-col">
-              <div className="image-space flex justify-center items-center bg-[#2EF1AD0F] p-10">
-              <img src={green} alt="" className='w-[50%]' />
+              <div className="image-space flex justify-center items-center bg-[#acc7d9] p-10">
+              <img src={pale} alt="" className='w-[50%]' />
               </div>
               <div className="text-[#d5d5d5] text-center p-6">
                 <h2 className="text-lg">
-                Modern Architecture Patterns
+                Flexible Financial Plannings
                 </h2>
                   <p className="text-sm">
-                  Explore modern architecture patterns that blend aesthetics with functionality, creating spaces that are both visually stunning and purpose-driven. We turn bold ideas into reality, delivering structures that stand the test of time.
+                  Maintain flexibility in your financial planning with customized solutions. Whether you’re editing, adding, or reallocating budgets, our approach ensures every project remains on track without compromising on quality.
                   </p>
               </div>
                  
              </div>
 
              <div className="card flex rounded-2xl bg-[#252525] flex-col">
-              <div className="image-space flex justify-center items-center bg-[#2EF1AD0F] p-10">
-              <img src={green} alt="" className='w-[50%]' />
+              <div className="image-space flex justify-center items-center bg-[#d4c3d0] p-10">
+              <img src={vi} alt="" className='w-[50%]' />
               </div>
               <div className="text-[#d5d5d5] text-center p-6">
                 <h2 className="text-lg">
-                Modern Architecture Patterns
+                Smart Resource Allocation
                 </h2>
                   <p className="text-sm">
-                  Explore modern architecture patterns that blend aesthetics with functionality, creating spaces that are both visually stunning and purpose-driven. We turn bold ideas into reality, delivering structures that stand the test of time.
+                  Allocate resources efficiently across every phase of your architectural project. Our strategic planning services empower you to manage spending limits and make informed decisions for maximum impact.
                   </p>
               </div>
                  
              </div>
       </div>
+    </section>
+
+    <section className="my-20 flex flex-col justify-center items-center">
+    <button className="rounded-[100px] bg-[#E79FE5] py-[5px] px-[18px] text-black text-xs flex self-center">Crafting Timeless Spaces with Precision and Purpose</button>
+      <div className="head">
+      <h2 className="text-center text-[#F2F2F2] font-semibold text-3xl md:text-[48px]">Frequently Asked Questions<span>.</span></h2>
+      </div>
+
+      <div className="faq-sect w-[80%] lg:w-[60%] p-6">
+      {faqs.map((faq, index) => (
+        <div key={index} className="bg-[#1A1A1A] px-10 py-3 mb-2.5 rounded-3xl">
+          {/* Question Section */}
+          <div 
+            className="flex justify-between items-center cursor-pointer text-lg font-semibold text-white"
+            onClick={() => toggleFAQ(index)}
+          >
+            <p>{faq.question}</p>
+            {openIndex === index ? <FiMinus className="text-xl" /> : <FiPlus className="text-xl" />}
+          </div>
+
+          {/* Answer Section (Animated) */}
+          <AnimatePresence>
+            {openIndex === index && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.3 }}
+                className="overflow-hidden text-gray-400 mt-2"
+              >
+                {faq.answer}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+      ))}
+    </div>
     </section>
 
     </>

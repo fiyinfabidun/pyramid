@@ -26,7 +26,7 @@ body{
     text-align: center;
     font-size: 18px;
     background: #fff;
-    padding: 130px;
+    padding: 160px 100px;
     border-radius: 20px;
     border: 2px solid white;
   
@@ -94,4 +94,13 @@ body{
 } 
 .swiper-pagination-bullet-active{
     background-color: black
+}
+
+.card h2{
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.image-space{
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
 }
