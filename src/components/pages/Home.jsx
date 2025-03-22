@@ -306,7 +306,7 @@ function Home() {
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:w-[75%] py-10 m-auto">
     <div className="test-card bg-[#252525] p-4 flex flex-col gap-4 rounded-xl justify-between">
-  <p className="text-sm lg:text-lg text-gray-400 text-start w-full">
+  <p className="text-xl text-gray-400 text-start w-full">
     Pyramid Architecture Studio transformed our office into a masterpiece. The attention to detail was exceptional!
   </p>
 
@@ -320,7 +320,7 @@ function Home() {
 </div>
 
 <div className="test-card justify-between bg-[#252525] p-4 flex flex-col gap-4 rounded-xl">
-  <p className="text-lg text-gray-400 text-start w-full">
+  <p className="text-xl text-gray-400 text-start w-full">
     Working with Pyramid was a dream. They brought our vision to life seamlessly.
   </p>
 
@@ -334,7 +334,7 @@ function Home() {
 </div>
 
 <div className="test-card justify-between bg-[#252525] p-4 flex flex-col gap-4 rounded-xl">
-  <p className="text-lg text-gray-400 text-start w-full">
+  <p className="text-xl text-gray-400 text-start w-full">
     Their innovative approach turned our home into something truly unique. Highly recommended!
   </p>
 
@@ -348,7 +348,7 @@ function Home() {
 </div>
 
 <div className="test-card justify-between bg-[#252525] p-4 flex flex-col gap-4 rounded-xl">
-  <p className="text-lg text-gray-400 text-start w-full">
+  <p className="text-xl text-gray-400 text-start w-full">
     I was impressed by their creativity and professionalism. Every detail was taken care of.
   </p>
 
@@ -362,7 +362,7 @@ function Home() {
 </div>
 
 <div className="test-card justify-between bg-[#252525] p-4 flex flex-col gap-4 rounded-xl">
-  <p className="text-lg text-gray-400 text-start w-full">
+  <p className="text-xl text-gray-400 text-start w-full">
     The team exceeded our expectations. The space they designed is both functional and stylish.
   </p>
 
@@ -375,7 +375,7 @@ function Home() {
   </div>
 </div>
 <div className="test-card bg-[#252525] p-4 flex flex-col gap-4 rounded-xl justify-between">
-  <p className="text-lg text-gray-400 text-start w-full">
+  <p className="text-xl text-gray-400 text-start w-full">
     Pyramid Architecture Studio transformed our office into a masterpiece. The attention to detail was exceptional!
   </p>
 
