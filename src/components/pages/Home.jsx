@@ -7,6 +7,11 @@ import img3 from '../../assets/build3.png'
 import img4 from '../../assets/build4.png'
 import img5 from '../../assets/build5.png'
 
+import ver1 from '../../assets/version1.png'
+import ver2 from '../../assets/version0.png'
+
+import green from '../../assets/green.png';
+
 
 
 function Home() {
@@ -128,6 +133,48 @@ function Home() {
 
               </div>      
     </div>
+    </section>
+
+    <section className='my-20'>
+      <div className="w-[90%] m-auto">
+           <button className="rounded-[100px] bg-[#84D0EE] py-[5px] px-[18px] text-black text-xs flex self-center">Where Every Detail Matters</button>
+           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="text flex flex-col gap-5">
+                  <h2 className="text-start text-[#F2F2F2] font-semibold text-3xl md:text-[48px]">
+                  Our Studio<span>.</span>
+                   </h2>
+                   <p className='text-[#d5d5d5] text-lg lg:text-xl lg:w-[80%] lg:leading-[32px]'>
+                   Pyramid Architecture Studio is dedicated to creating beautiful, functional spaces that reflect your unique vision. Our team of experienced professionals is committed to delivering excellence in every project.
+                   Our team is composed of talented architects, designers, and project managers who bring a wealth of experience and expertise to every project. 
+                   </p>
+                  </div>
+
+                  <div className="flex images gap-3.5 flex-wrap md:flex-nowrap justify-center items-center">
+                       <img src={ver1} alt=""  className='md:w-[50%]'/>
+                       <img src={ver2} alt="" className='md:w-[50%] md:relative md:top-[60px]' />
+                  </div>
+           </div>
+      </div>
+    </section>
+
+
+    <section className="my-25 flex flex-col items-center justify-center gap-4 ">
+    <button className="rounded-[100px] bg-[#BAE79F] py-[5px] px-[18px] text-black text-xs flex self-center">What we offer.</button>
+      <div className="head">
+      <h2 className="text-center text-[#F2F2F2] font-semibold text-3xl md:text-[48px]">Why Pyramid Studio<span>?</span></h2>
+      <p className="text-lg  text-center w-[60%] m-auto text-[#d5d5d5]">
+      Pyramid Architecture Studio is a trusted leader in architectural design, committed to long-term partnerships with clients and  startups. 
+      </p>
+      </div>
+
+      <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+             <div className="card flex rounded-2xl bg-[#252525]">
+              <div className="image-space">
+              <img src={green} alt="" />
+              </div>
+                 
+             </div>
+      </div>
     </section>
 
     </>
