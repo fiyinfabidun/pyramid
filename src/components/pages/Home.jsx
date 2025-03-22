@@ -367,6 +367,19 @@ function Home() {
     </div>
   </div>
 </div>
+<div className="test-card bg-[#252525] p-4 flex flex-col gap-4 rounded-xl justify-between">
+  <p className="text-sm lg:text-lg text-gray-400 text-start w-full">
+    Pyramid Architecture Studio transformed our office into a masterpiece. The attention to detail was exceptional!
+  </p>
+
+  <div className="profile flex items-center gap-2">
+    <div className="bg-blue-50 w-[56px] h-[56px] rounded-[50%] p-4"></div>
+    <div className="flex flex-col">
+      <h3 className="text-[#d5d5d5] font-semibold">John Carter</h3>
+      <p className="text-sm text-[#d5d5d5] font-light">Manager, Arcane Tech</p>
+    </div>
+  </div>
+</div>
 
       </div> 
     </section>
