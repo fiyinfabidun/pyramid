@@ -10,12 +10,12 @@ function Footer() {
 
 
         <div className="grid grid-cols-1 md:grid-cols-3 w-[90%] m-auto ">
-            <div className="logo">
+            <div className="logo flex justify-center md:justify-start flex-col items-center md:items-start">
                 <img src={logo} alt="" className='w-[70%]' />
                 <p className='text-[#E6E6E6] font-light'>Architecture Studio</p>
             </div>
 
-            <div className="links grid grid-cols-1 md:grid-cols-3">
+            <div className="links grid grid-cols-1 md:grid-cols-3 text-center">
                    <div className="head flex flex-col gap-4">
                     <h3 className='text-lg text-white font-bold py-4'>Services</h3>
                     <p className='text-sm font-light text-white'>Interior design</p>
@@ -49,9 +49,9 @@ function Footer() {
         </div>
 
 
-        <div className="grid grid-cols-1 md:grid-cols-3 text-[#9F9F9F] font-thin w-[90%] m-auto pt-15">
+        <div className="grid grid-cols-1 md:grid-cols-3 text-[#9F9F9F] font-thin w-[90%] m-auto pt-15 text-center md:text-start gap-3">
                <p>©2025 Pyramids Studio, All rights reserved.</p>
-               <div className="flex justify-between flex-wrap gap-4">
+               <div className="flex justify-between flex-wrap gap-4 flex-col md:flex-row">
                   <p>Privacy Policy</p>
                   <p>Terms</p>
                   <p>Company</p>
