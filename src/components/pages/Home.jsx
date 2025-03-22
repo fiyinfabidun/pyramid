@@ -26,6 +26,8 @@ import vecc from '../../assets/vecc.png'
 import vecd from '../../assets/vecd.png'
 import vece from '../../assets/vece.png'
 
+import FadeUp from '../Fade'
+
 
 
 
@@ -73,10 +75,13 @@ function Home() {
                    <button className="rounded-[100px] bg-[#84EEA7] py-[5px] px-[18px] text-black text-xs flex self-center">
                    Designing Spaces, Crafting Futures.
                    </button>
+                   <FadeUp>
                    <h2 className="text-center text-[#F2F2F2] font-semibold text-3xl md:text-6xl">
                    Build Your Dream Space<span>.</span>
                    </h2>
-                   <h4 className="text-sm lg:w-[60%] text-center text-body-white">
+                   </FadeUp>
+
+                   <h4 className="text-sm lg:w-[60%] text-center text-body-white" data-aos="fade-in">
                    At Pyramids Architecture Studio, we turn your vision into reality with expert planning and innovative design. Let us create a beautiful, functional space for you.
                    </h4>
                    <button className="bg-[#F19A21] py-[9px] px-[50px] rounded-[100px] text-white">
@@ -94,9 +99,12 @@ function Home() {
             <div className="rounded-[100px] bg-[#E8EE84] px-[18px] py-[5px] text-xs">
             Where Vision Meets Craft
             </div>
+            <FadeUp>
             <h2 className="text-center text-[#F2F2F2] font-semibold text-3xl md:text-6xl">
             Featured work<span>.</span>
                    </h2>
+            </FadeUp>
+
 
              <div className="grid note grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[70%] xl:w-[80%] lg:p-10 p-4 gap-4">
 
@@ -191,15 +199,18 @@ function Home() {
                   <h2 className="text-start text-[#F2F2F2] font-semibold text-3xl md:text-[48px]">
                   Our Studio<span>.</span>
                    </h2>
+                   <FadeUp>
                    <p className='text-[#d5d5d5] text-lg lg:text-xl lg:w-[80%] lg:leading-[32px]'>
                    Pyramid Architecture Studio is dedicated to creating beautiful, functional spaces that reflect your unique vision. Our team of experienced professionals is committed to delivering excellence in every project.
                    Our team is composed of talented architects, designers, and project managers who bring a wealth of experience and expertise to every project. 
                    </p>
+                   </FadeUp>
+
                   </div>
 
                   <div className="flex images gap-3.5 flex-wrap md:flex-nowrap justify-center items-center skewed-images">
-                       <img src={ver1} alt=""  className='md:w-[50%]'/>
-                       <img src={ver2} alt="" className='md:w-[50%] md:relative md:top-[60px]' />
+                       <img src={ver1} alt=""  className='md:w-[50%]' data-aos='fade-up'/>
+                       <img src={ver2} alt="" className='md:w-[50%] md:relative md:top-[60px]' data-aos="fade-up" data-aos-delay="500" />
                   </div>
            </div>
       </div>
@@ -208,12 +219,12 @@ function Home() {
 
     <section className="my-25 flex flex-col items-center justify-center gap-4 ">
     <button className="rounded-[100px] bg-[#BAE79F] py-[5px] px-[18px] text-black text-xs flex self-center">What we offer.</button>
-      <div className="head">
+      <FadeUp className="head">
       <h2 className="text-center text-[#F2F2F2] font-semibold text-3xl md:text-[48px]">Why Pyramid Studio<span>?</span></h2>
       <p className="text-lg  text-center  w-[80%] lg:w-[60%] m-auto text-[#d5d5d5]">
       Pyramid Architecture Studio is a trusted leader in architectural design, committed to long-term partnerships with clients and  startups. 
       </p>
-      </div>
+      </FadeUp>
 
       <div className="card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[80%] mt-8 gap-3 w-[90%] m-auto">
              <div className="card flex rounded-2xl bg-[#252525] flex-col">
@@ -265,9 +276,9 @@ function Home() {
 
     <section className="my-20 flex flex-col justify-center items-center  m-auto">
     <button className="rounded-[100px] bg-[#E79FE5] py-[5px] px-[18px] text-black text-xs flex self-center">Crafting Timeless Spaces</button>
-      <div className="head">
+      <FadeUp className="head">
       <h2 className="text-center text-[#F2F2F2] font-semibold text-3xl md:text-[48px]">Frequently Asked Questions<span>.</span></h2>
-      </div>
+      </FadeUp>
 
       <div className="faq-sect lg:w-[60%] p-4 md:p-6">
       {faqs.map((faq, index) => (
@@ -303,7 +314,10 @@ function Home() {
 
     <section className="py-10 w-[90%] m-auto">
     <button className="rounded-[100px] bg-[#BAE79F] py-[5px] px-[18px] text-black text-xs flex self-start">Hear from people</button>
-    <h2 className="text-start text-[#F2F2F2] font-semibold text-3xl md:text-6xl">Build Your Dream Space<span>.</span></h2>     
+    <FadeUp>
+    <h2 className="text-start text-[#F2F2F2] font-semibold text-3xl md:text-6xl">Build Your Dream Space<span>.</span></h2>    
+    </FadeUp>
+ 
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:w-[75%] py-10 m-auto">
     <div className="test-card bg-[#252525] p-4 flex flex-col gap-4 rounded-xl justify-between">
