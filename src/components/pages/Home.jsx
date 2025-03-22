@@ -26,13 +26,6 @@ import vecc from '../../assets/vecc.png'
 import vecd from '../../assets/vecd.png'
 import vece from '../../assets/vece.png'
 
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import gsap from 'gsap'
-
-gsap.registerPlugin(ScrollTrigger);
-
-
-
 
 const faqs = [
   {
