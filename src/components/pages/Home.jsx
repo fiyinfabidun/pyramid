@@ -202,7 +202,7 @@ function Home() {
     <button className="rounded-[100px] bg-[#BAE79F] py-[5px] px-[18px] text-black text-xs flex self-center">What we offer.</button>
       <div className="head">
       <h2 className="text-center text-[#F2F2F2] font-semibold text-3xl md:text-[48px]">Why Pyramid Studio<span>?</span></h2>
-      <p className="text-lg  text-center w-[60%] m-auto text-[#d5d5d5]">
+      <p className="text-lg  text-center  w-[80%] lg:w-[60%] m-auto text-[#d5d5d5]">
       Pyramid Architecture Studio is a trusted leader in architectural design, committed to long-term partnerships with clients and  startups. 
       </p>
       </div>
@@ -255,15 +255,15 @@ function Home() {
       </div>
     </section>
 
-    <section className="my-20 flex flex-col justify-center items-center">
-    <button className="rounded-[100px] bg-[#E79FE5] py-[5px] px-[18px] text-black text-xs flex self-center">Crafting Timeless Spaces with Precision and Purpose</button>
+    <section className="my-20 flex flex-col justify-center items-center  m-auto">
+    <button className="rounded-[100px] bg-[#E79FE5] py-[5px] px-[18px] text-black text-xs flex self-center">Crafting Timeless Spaces</button>
       <div className="head">
       <h2 className="text-center text-[#F2F2F2] font-semibold text-3xl md:text-[48px]">Frequently Asked Questions<span>.</span></h2>
       </div>
 
-      <div className="faq-sect w-[80%] lg:w-[60%] p-6">
+      <div className="faq-sect lg:w-[60%] p-4 md:p-6">
       {faqs.map((faq, index) => (
-        <div key={index} className="bg-[#1A1A1A] px-10 py-3 mb-2.5 rounded-3xl">
+        <div key={index} className="bg-[#1A1A1A] px-6 md:px-10 py-3 mb-2.5 rounded-3xl  border-[0.5px] border-[#3C3C3C]">
           {/* Question Section */}
           <div 
             className="flex justify-between items-center cursor-pointer text-lg font-semibold text-white"
