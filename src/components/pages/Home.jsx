@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import Navbar from '../Navbar'
+import Footer from '../Footer'
 import Slider from '../Slider'
 import img1 from '../../assets/build1.png'
 import img2 from '../../assets/buld2.png'
@@ -19,6 +20,12 @@ import { useState } from 'react'
 
 import { FiPlus, FiMinus } from "react-icons/fi";
 import { AnimatePresence,motion } from 'framer-motion'
+
+import veca from '../../assets/veca.png'
+import vecb from '../../assets/vecb.png'
+import vecc from '../../assets/vecc.png'
+import vecd from '../../assets/vecd.png'
+import vece from '../../assets/vece.png'
 
 const faqs = [
   {
@@ -71,7 +78,7 @@ function Home() {
                    <h4 className="text-sm lg:w-[60%] text-center text-body-white">
                    At Pyramids Architecture Studio, we turn your vision into reality with expert planning and innovative design. Let us create a beautiful, functional space for you.
                    </h4>
-                   <button className="bg-[#F19A21] py-[9px] px-[50px] rounded text-white">
+                   <button className="bg-[#F19A21] py-[9px] px-[50px] rounded-[100px] text-white">
                     Hire Us
                    </button>
                    <Slider className='mt-4'/>
@@ -383,6 +390,27 @@ function Home() {
 
       </div> 
     </section>
+
+
+    <section className="pt-10 relative bottom-0">
+      <div className="image absolute w-full">
+         <img src={veca} alt="" />
+      </div>
+      <div className="image absolute w-full ">
+         <img src={vecb} alt="" />
+      </div>
+      <div className="image absolute w-full">
+         <img src={vecd} alt="" />
+      </div>
+      <div className="image absolute w-full">
+         <img src={vecc } alt="" />
+      </div>
+      <div className="image relative lg:top-[-200px] top-[-50px] w-full z-[-1]">
+         <img src={vece} alt="" />
+      </div>
+    </section>
+  <Footer/>
+
 
     </>
   )
