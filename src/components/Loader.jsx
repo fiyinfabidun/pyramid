@@ -20,7 +20,7 @@ d="M0 13.807V.187h5.517c1.061 0 1.965.197 2.711.591.747.39 1.316.933 1.707 1.63.
         fill="transparent"
         initial={{ strokeDasharray: 300, strokeDashoffset: 300 }}
         animate={{ strokeDashoffset: 0 }}
-        transition={{ duration: 2, ease: "easeInOut" }}
+        transition={{ duration: 5, ease: "easeInOut" }}
       />
 
       {/* Orange Outline Animation */}

@@ -9,13 +9,13 @@ function Footer() {
         <div className='footer-b w-full py-5'>
 
 
-        <div className="grid grid-cols-1 md:grid-cols-3 w-[90%] m-auto ">
-            <div className="logo flex justify-center md:justify-start flex-col items-center md:items-start">
-                <img src={logo} alt="" className='w-[70%]' />
+        <div className="grid grid-cols-1 lg:grid-cols-3 w-[90%] m-auto ">
+            <div className="logo flex justify-center lg:justify-start flex-col items-center lg:items-start">
+                <img src={logo} alt="" className='w-[70%] md:w-[50%]' />
                 <p className='text-[#E6E6E6] font-light'>Architecture Studio</p>
             </div>
 
-            <div className="links grid grid-cols-1 md:grid-cols-3 text-center">
+            <div className="links grid grid-cols-1 lg:grid-cols-3 text-center">
                    <div className="head flex flex-col gap-4">
                     <h3 className='text-lg text-white font-bold py-4'>Services</h3>
                     <p className='text-sm font-light text-white'>Interior design</p>

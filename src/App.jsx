@@ -16,7 +16,7 @@ function App() {
     setloading(true)
     setTimeout(() => {
       setloading(false)
-    }, 3000 );
+    }, 5000 );
   }, [])
 
   const ScrollToTop = () => {
