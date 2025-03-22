@@ -26,8 +26,12 @@ import vecc from '../../assets/vecc.png'
 import vecd from '../../assets/vecd.png'
 import vece from '../../assets/vece.png'
 
-// loader component
-import SvgComponent from '../Loader'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from 'gsap'
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 
 
 const faqs = [
@@ -198,7 +202,7 @@ function Home() {
                    </p>
                   </div>
 
-                  <div className="flex images gap-3.5 flex-wrap md:flex-nowrap justify-center items-center">
+                  <div className="flex images gap-3.5 flex-wrap md:flex-nowrap justify-center items-center skewed-images">
                        <img src={ver1} alt=""  className='md:w-[50%]'/>
                        <img src={ver2} alt="" className='md:w-[50%] md:relative md:top-[60px]' />
                   </div>
@@ -411,8 +415,6 @@ function Home() {
          <img src={vece} alt="" />
       </div>
     </section>
-
-
 
 
     </>
