@@ -5,7 +5,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 function Footer() {
   return (
     <>
-    <div className="footer py-20 relative bg-black z-100  m-auto #E5E5E524">
+    <div className="footer py-20 relative bg-black z-10  m-auto #E5E5E524">
         <div className='footer-b w-full py-5'>
 
 

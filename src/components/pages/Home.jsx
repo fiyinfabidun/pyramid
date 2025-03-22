@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import Navbar from '../Navbar'
-import Footer from '../Footer'
+
 import Slider from '../Slider'
 import img1 from '../../assets/build1.png'
 import img2 from '../../assets/buld2.png'
@@ -26,6 +25,10 @@ import vecb from '../../assets/vecb.png'
 import vecc from '../../assets/vecc.png'
 import vecd from '../../assets/vecd.png'
 import vece from '../../assets/vece.png'
+
+// loader component
+import SvgComponent from '../Loader'
+
 
 const faqs = [
   {
@@ -65,7 +68,6 @@ function Home() {
   return (
     <>
     <section className="hero-section bg-bg h-screen flex flex-col justify-center items-center ">
-    <Navbar/>
         <div className="maxed">
              
               <div className="hero-text flex flex-col justify-center gap-4  items-center h-fit ">
@@ -409,7 +411,8 @@ function Home() {
          <img src={vece} alt="" />
       </div>
     </section>
-  <Footer/>
+
+
 
 
     </>
