@@ -109,3 +109,7 @@ body{
 .test-card{
   border: 1px solid #3C3C3C;
 }
+
+.footer-b{
+  border-top: 0.5px solid #E5E5E524 ;
+}
