@@ -27,6 +27,8 @@ import vecd from '../../assets/vecd.png'
 import vece from '../../assets/vece.png'
 
 
+
+
 const faqs = [
   {
     question: "What services does your architecture firm offer?",

@@ -38,3 +38,36 @@ d="M0 13.807V.187h5.517c1.061 0 1.965.197 2.711.591.747.39 1.316.933 1.707 1.63.
 };
 
 export default SvgComponent;
+
+
+
+
+
+
+
+const faqs = [
+    {
+      question: "What services does your architecture firm offer?",
+      answer: "Our firm offers a comprehensive range of services including architectural design, urban planning, interior design, sustainable architecture consulting, 3D visualization, and project management from concept to completion."
+    },
+    {
+      question: "How do you charge for your architectural services?",
+      answer: "We typically charge based on a percentage of the total construction cost, ranging from 8-15% depending on project complexity. For smaller projects, we may offer hourly rates or fixed-fee packages. We provide detailed fee proposals after our initial consultation."
+    },
+    {
+      question: "What is your design philosophy?",
+      answer: "Our design philosophy centers on creating spaces that harmoniously blend functionality, aesthetics, and sustainability. We believe architecture should respond to both human needs and environmental context, while pushing boundaries of innovation and respecting cultural heritage."
+    },
+    {
+      question: "How long does the typical architectural design process take?",
+      answer: "The design process timeline varies by project scope. Residential projects typically take 3-6 months for design development, while commercial projects may require 6-12 months. Construction documentation and permitting add additional time. During our initial consultation, we'll provide a customized timeline for your specific project."
+    },
+    {
+      question: "Do you specialize in any particular architectural style?",
+      answer: "While we're versatile in various architectural styles, our portfolio showcases strength in contemporary sustainable design, adaptive reuse of historic structures, and biophilic architecture. We prioritize tailoring our approach to each client's vision rather than imposing a signature style."
+    },
+    {
+      question: "What sustainability practices do you incorporate into your designs?",
+      answer: "We integrate numerous sustainable practices including passive solar design, energy-efficient systems, water conservation strategies, locally-sourced and eco-friendly materials, green roofs, and smart home technology. Our firm includes LEED-certified professionals who can guide projects toward various sustainability certifications."
+    }
+  ];
