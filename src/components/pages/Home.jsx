@@ -3,6 +3,9 @@ import Navbar from '../Navbar'
 import Slider from '../Slider'
 import img1 from '../../assets/build1.png'
 import img2 from '../../assets/buld2.png'
+import img3 from '../../assets/build3.png'
+import img4 from '../../assets/build4.png'
+import img5 from '../../assets/build5.png'
 
 
 
@@ -42,7 +45,7 @@ function Home() {
             Featured work<span>.</span>
                    </h2>
 
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[70%] lg:p-10 p-4 gap-4">
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:w-[70%] xl:w-[80%] lg:p-10 p-4 gap-4">
 
             <div className="card p-3 bg-[#252525] rounded-[24px] flex flex-col gap-4">
               <div className="image ">
@@ -53,7 +56,7 @@ function Home() {
                       <h3 className='text-[#EFEFEF]'>Turkey Modern Era</h3>
                       <p className='text-[#E4E4E4] text-xs'>©️2024 modem</p>
                 </div>
-                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs">View Project</button>
+                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs rounded-3xl">View Project</button>
               </div>
             </div>
 
@@ -66,46 +69,46 @@ function Home() {
                       <h3 className='text-[#EFEFEF]'>Turkey Modern Era</h3>
                       <p className='text-[#E4E4E4] text-xs'>©️2024 modem</p>
                 </div>
-                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs">View Project</button>
+                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs rounded-3xl">View Project</button>
               </div>
             </div>
 
             <div className="card p-3 bg-[#252525] rounded-[24px] flex flex-col gap-4">
               <div className="image ">
-              <img src={img1} alt="" />
+              <img src={img3} alt="" />
               </div>
               <div className="flex justify-between">
                 <div className="flex flex-col">
                       <h3 className='text-[#EFEFEF]'>Turkey Modern Era</h3>
                       <p className='text-[#E4E4E4] text-xs'>©️2024 modem</p>
                 </div>
-                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs">View Project</button>
+                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs rounded-3xl">View Project</button>
               </div>
             </div>
 
             <div className="card p-3 bg-[#252525] rounded-[24px] flex flex-col gap-4">
               <div className="image ">
-              <img src={img1} alt="" />
+              <img src={img4} alt="" />
               </div>
               <div className="flex justify-between">
                 <div className="flex flex-col">
                       <h3 className='text-[#EFEFEF]'>Turkey Modern Era</h3>
                       <p className='text-[#E4E4E4] text-xs'>©️2024 modem</p>
                 </div>
-                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs">View Project</button>
+                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs rounded-3xl">View Project</button>
               </div>
             </div>
 
             <div className="card p-3 bg-[#252525] rounded-[24px] flex flex-col gap-4">
               <div className="image ">
-              <img src={img1} alt="" />
+              <img src={img5} alt="" />
               </div>
               <div className="flex justify-between">
                 <div className="flex flex-col">
                       <h3 className='text-[#EFEFEF]'>Turkey Modern Era</h3>
                       <p className='text-[#E4E4E4] text-xs'>©️2024 modem</p>
                 </div>
-                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs">View Project</button>
+                <button className="bg-[#2E2E2E] text-[#e4e4e4] p-[13px] text-xs rounded-3xl">View Project</button>
               </div>
             </div>
 

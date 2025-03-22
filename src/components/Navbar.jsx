@@ -27,7 +27,7 @@ function Navbar() {
       {/* Navbar Container */}
       <div
         className={`nav grid grid-cols-2 lg:grid-cols-3 py-6 items-center px-6 lg:px-16 fixed top-0 w-full z-50 transition-colors duration-300 ${
-          isScrolled ? "bg-black shadow-lg" : "bg-transparent"
+          isScrolled ? "bg-bg shadow-lg" : "bg-transparent"
         }`}
       >
         {/* Logo */}
